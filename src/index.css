@@ -21,7 +21,7 @@ header {
   -webkit-box-shaow: 0px 2px 7px #dadada;
   -moz-box-shadow: 0px 2px 7px #dadada;
   box-shadow: 0px 2px 7px #dadada;
-  margin-bottom: 2px;
+  margin-bottom: 15px;
 }
 
 footer {
@@ -47,8 +47,8 @@ main {
 }
 
 .container {
-  margin-right: 1%;
-  width: 74%;
+  margin-right: 3%;
+  width: 72%;
   flex-direction: column;
   margin-bottom: 20px;
 }

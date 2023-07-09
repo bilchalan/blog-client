@@ -15,6 +15,7 @@ import CreatePost from './features/post/pages/CreatePost';
 import ApprovePost from './features/post/pages/ApprovePost';
 import Search from './features/post/pages/Search';
 import PostDetails from './features/post/pages/PostDetails';
+import About from './features/common/pages/About';
 function App() {
   const { dark } = useAppSelector(selectTheme);
   const dispatch = useAppDispatch();
@@ -31,6 +32,7 @@ function App() {
           <Route path="unauthorized" element={<Unauthorized />} />
           <Route path="search" element={<Search />} />
           <Route path="posts/:id" element={<PostDetails />} />
+          <Route path="/about" element={<About />} />
 
           <Route element={<ProtectedRoute allowedRoles={['admin']} />}>
             <Route path="create-category" element={<CreateCategory />} />
