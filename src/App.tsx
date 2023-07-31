@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Mainlayout from './features/common/layouts/Main.layout';
 import Posts from './features/post/pages/Posts';
 import Auth from './features/auth/pages/Auth';
@@ -48,6 +48,8 @@ function App() {
           <Route element={<ProtectedRoute allowedRoles={['author']} />}>
             <Route path="create-post" element={<CreatePost />} />
           </Route>
+          {/* Catch all - replace with 404 component if you want */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
     </div>
