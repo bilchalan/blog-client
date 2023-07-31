@@ -553,7 +553,11 @@ dialog{
   font-weight: bold;
   justify-content: space-evenly;
   background-color: #999;
-}    
+}   
+/* .comment-avtr css add after video uploaded to yourube */
+.comment-avtr{
+  display:flex;
+}
 @media only screen and (max-width:768px) {
   .desk-menu {
     display: none;
